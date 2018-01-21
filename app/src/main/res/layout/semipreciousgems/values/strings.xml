@@ -832,5 +832,11 @@ Zircon is found in the most metamorphic rocks as small crystals mostly widely di
 <b>Natural Zircon Rs. 2100.00 Per Ratti.</b>
     </string>
     <string name="software_dev">Made with ❤️ by International Orgaisation Of Software Developers</string>
+    <string name="hara_pukhraj_head">HARA PUKHRAJ | GREEN SAPPHIRE</string>
+    <string name="baingani_pukhraj_head">BAINGANI PUKHRAJ | PURPLE SAPPHIRE</string>
+    <string name="gulabi_pukhraj_head">GULABI PUKHRAJ | PINK SAPPHIRE</string>
+    <string name="moti_head">MOTI | PEARL</string>
+    <string name="pitambari_neelam_head">PUTAMBARI NEELAM | YELLOW BLUE SAPPHIRE</string>
+    <string name="safed_pukhraj_head">SAFED PUKHRAJ | WHITE SAPPHIRE</string>
 
 </resources>

@@ -5,23 +5,25 @@
 
     <uses-sdk
         android:maxSdkVersion="26"
-        android:minSdkVersion="16">
-    </uses-sdk>
+        android:minSdkVersion="16" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAMERA" />
 
-    <uses-feature android:name="android.hardware.Camera2" android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.Camera2"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-
         android:theme="@style/AppTheme">
         <provider
             android:name=".DataProviders.MyFileProvider"
@@ -321,7 +323,63 @@
                 android:resource="@xml/provider_paths" />
         </provider>
 
-        <activity android:name=".MainContent.ActivityForDiamonds"></activity>
+        <activity android:name=".MainContent.ActivityForDiamonds" />
+        <activity
+            android:name=".Pukhraj.HaraPukhraj"
+            android:label="Green Sapphire"
+            android:parentActivityName=".MainContent.MainActivity"
+            android:theme="@style/HaraPukhrajTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.iosd.gemselections.MainContent.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Pukhraj.BainganiPukhraj"
+            android:label="Purple Sapphire"
+            android:parentActivityName=".MainContent.MainActivity"
+            android:theme="@style/BainganiPukhrajTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.iosd.gemselections.MainContent.MainActivity" />
+            >
+        </activity>
+        <activity
+            android:name=".Pukhraj.GulabiPukhraj"
+            android:label="Pink Sapphire"
+            android:parentActivityName=".MainContent.MainActivity"
+            android:theme="@style/BainganiPukhrajTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.iosd.gemselections.MainContent.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SemiPreciousGems.MotiActivity"
+            android:label="Pearl"
+            android:parentActivityName=".MainContent.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.iosd.gemselections.MainContent.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Pukhraj.PitambariNeelam"
+            android:label="Pitambari Neelam"
+            android:parentActivityName=".MainContent.MainActivity"
+            android:theme="@style/NeelamTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.iosd.gemselections.MainContent.MainActivity" />
+        </activity>
+        <activity android:name=".Pukhraj.SafedPukhraj"
+            android:label="White Sapphire"
+            android:parentActivityName=".MainContent.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.iosd.gemselections.MainContent.MainActivity" />
+
+
+        </activity>
     </application>
 
 </manifest>

@@ -24,9 +24,15 @@ import tech.iosd.gemselections.Gomed.GomedActivity;
 import tech.iosd.gemselections.Lehsunia.LehsuniaActivity;
 import tech.iosd.gemselections.MoongaActivity;
 import tech.iosd.gemselections.Neelam.NeelamActivity;
+import tech.iosd.gemselections.Pukhraj.BainganiPukhraj;
+import tech.iosd.gemselections.Pukhraj.GulabiPukhraj;
+import tech.iosd.gemselections.Pukhraj.HaraPukhraj;
+import tech.iosd.gemselections.Pukhraj.PitambariNeelam;
 import tech.iosd.gemselections.Pukhraj.PukhrajActivity;
+import tech.iosd.gemselections.Pukhraj.SafedPukhraj;
 import tech.iosd.gemselections.R;
 import tech.iosd.gemselections.Ruby.RubyActivity;
+import tech.iosd.gemselections.SemiPreciousGems.MotiActivity;
 import tech.iosd.gemselections.Utils.WebViewActivity;
 
 import com.google.android.youtube.player.YouTubeInitializationResult;
@@ -243,7 +249,11 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         if(v == baingani){
-            show_dialog("Baingani Pukhraj", tech.iosd.gemselections.R.string.baingani_pukhraj_text, "images/precious-gems/gems/Purple-sapphire.jpg", "http://khannagems.com/index.php/gem-stones/baingani-pukhraj.html", "GT6d2ShkyQ4");
+            startActivity(
+                    new Intent(getActivity(), BainganiPukhraj.class)
+            );
+
+           // show_dialog("Baingani Pukhraj", tech.iosd.gemselections.R.string.baingani_pukhraj_text, "images/precious-gems/gems/Purple-sapphire.jpg", "http://khannagems.com/index.php/gem-stones/baingani-pukhraj.html", "GT6d2ShkyQ4");
         }
         if(v == panna)
         {
@@ -252,19 +262,34 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             );
         }
         if(v == moti){
-            show_dialog("Moti | Fresh Water Pearl", tech.iosd.gemselections.R.string.moti_text, "images/Fresh-water-pearl.jpg", "http://khannagems.com/index.php/gem-stones/moti.html", "5lbgEk97vbM");
+            startActivity(
+                    new Intent(getActivity(), MotiActivity.class)
+            );
+           // show_dialog("Moti | Fresh Water Pearl", tech.iosd.gemselections.R.string.moti_text, "images/Fresh-water-pearl.jpg", "http://khannagems.com/index.php/gem-stones/moti.html", "5lbgEk97vbM");
         }
         if(v == pitambari){
-            show_dialog("Pitambari Neelam", tech.iosd.gemselections.R.string.pitambari_text, "images/precious-gems/gems/Pitambari-neelam.jpg", "http://khannagems.com/index.php/gem-stones/pitambari-neelam.html", "CeDODoOMGCU");
+            startActivity(
+                    new Intent(getActivity(), PitambariNeelam.class)
+            );
+            // show_dialog("Pitambari Neelam", tech.iosd.gemselections.R.string.pitambari_text, "images/precious-gems/gems/Pitambari-neelam.jpg", "http://khannagems.com/index.php/gem-stones/pitambari-neelam.html", "CeDODoOMGCU");
         }
         if(v == safed){
-            show_dialog("Safed Pukhraj", tech.iosd.gemselections.R.string.safed_text, "images/precious-gems/safed-pukhraj.jpg", "http://khannagems.com/index.php/gem-stones/pukhraj.html", "7LHUls5FNdk");
+            startActivity(
+                    new Intent(getActivity(), SafedPukhraj.class)
+            );
+            //show_dialog("Safed Pukhraj", tech.iosd.gemselections.R.string.safed_text, "images/precious-gems/safed-pukhraj.jpg", "http://khannagems.com/index.php/gem-stones/pukhraj.html", "7LHUls5FNdk");
         }
         if(v == gulabi){
-            show_dialog("Gulabi Pukhraj", tech.iosd.gemselections.R.string.gulabi_text, "images/precious-gems/gems/pink-sapphire.jpg", "http://khannagems.com/index.php/gem-stones/pukhraj.html", "sgnb-nr1UHQ");
+            startActivity(
+                    new Intent(getActivity(), GulabiPukhraj.class)
+            );
+            //show_dialog("Gulabi Pukhraj", tech.iosd.gemselections.R.string.gulabi_text, "images/precious-gems/gems/pink-sapphire.jpg", "http://khannagems.com/index.php/gem-stones/pukhraj.html", "sgnb-nr1UHQ");
         }
         if(v == hara){
-            show_dialog("Hara Pukhraj", tech.iosd.gemselections.R.string.hara_text, "images/precious-gems/hara-pukhraj.jpg", "http://khannagems.com/index.php/gem-stones/pukhraj.html", "GVOcqJeG5iM");
+            startActivity(
+                    new Intent(getActivity(), HaraPukhraj.class)
+            );
+            //show_dialog("Hara Pukhraj", tech.iosd.gemselections.R.string.hara_text, "images/precious-gems/hara-pukhraj.jpg", "http://khannagems.com/index.php/gem-stones/pukhraj.html", "GVOcqJeG5iM");
         }
         if(v == moonga){
             startActivity(

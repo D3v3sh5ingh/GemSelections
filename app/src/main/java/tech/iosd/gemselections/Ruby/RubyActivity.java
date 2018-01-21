@@ -57,6 +57,7 @@ public class RubyActivity extends YouTubeBaseActivity implements AdapterView.OnI
     private static final String DEVELOPER_KEY = "AIzaSyBKlHdEkS-X7Vb2mW2qQSlF1TOxKzWpSU8";
     private static final int RECOVERY_REQUEST = 1;
 
+
     private String[] _options =
             {
                     "ABOUT RUBY | MANIK",
