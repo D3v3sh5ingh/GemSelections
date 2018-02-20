@@ -36,6 +36,10 @@
             android:icon="@drawable/ic_gemstonesandastrology"
             android:title="GemStones and Astrology "/>
         <item
+            android:id="@+id/nav_astro_remedies"
+            android:icon="@drawable/ic_gemstonesandastrology"
+            android:title="Astrological Remedies "/>
+        <item
             android:id="@+id/gemstone_recommendation"
             android:icon="@drawable/ic_gem_recommendation"
             android:title="Gemstone Recommendation"/>

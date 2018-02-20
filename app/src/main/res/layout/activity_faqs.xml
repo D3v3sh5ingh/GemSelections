@@ -36,14 +36,31 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 ></com.google.android.youtube.player.YouTubePlayerView>
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+android:background="#f9f3f3"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="5dp"
+                android:paddingLeft="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary1"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
+                android:textAllCaps="true"
                 android:fontFamily="serif"
-                android:textColor="#000"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimaryDark2"
+                android:textStyle="bold"
                 android:text="@string/faq1"/>
+        </LinearLayout>
             <TextView
                 android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
@@ -52,15 +69,34 @@
                 android:textColor="#444"
                 android:fontFamily="serif"
                 android:text="@string/faq2"/>
-
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#f9f3f3"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="5dp"
+                android:paddingLeft="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary1"/>
             <TextView
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
+                android:textAllCaps="true"
                 android:fontFamily="serif"
-                android:textColor="#000"
+                android:textStyle="bold"
+                android:padding="10dp"
+
+                android:textColor="@color/colorPrimaryDark2"
                 android:text="@string/faq3"/>
+        </LinearLayout>
             <TextView
                 android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
@@ -69,16 +105,34 @@
                 android:textColor="#444"
                 android:fontFamily="serif"
                 android:text="@string/faq4"/>
-
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#f9f3f3"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="5dp"
+                android:paddingLeft="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary1"/>
             <TextView
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
                 android:fontFamily="serif"
-                android:textColor="#000"
+                android:textAllCaps="true"
+                android:padding="10dp"
+
+                android:textColor="@color/colorPrimaryDark2"
                 android:textStyle="bold"
-                android:text="Q. How to take care of pearls?"/>
+                android:text="How to take care of pearls?"/>
+        </LinearLayout>
             <TextView
                 android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
@@ -87,15 +141,35 @@
                 android:textColor="#444"
                 android:fontFamily="serif"
                 android:text="@string/pearl_care"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
 
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#f9f3f3"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="5dp"
+                android:paddingLeft="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary1"/>
             <TextView
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
                 android:fontFamily="serif"
-                android:textColor="#000"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:padding="10dp"
+
+                android:textColor="@color/colorPrimaryDark2"
                 android:text="@string/faq5"/>
+        </LinearLayout>
             <TextView
                 android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
@@ -104,15 +178,35 @@
                 android:textColor="#444"
                 android:fontFamily="serif"
                 android:text="@string/faq6"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
 
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#f9f3f3"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="5dp"
+                android:paddingLeft="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary1"/>
             <TextView
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
+                android:textAllCaps="true"
                 android:fontFamily="serif"
-                android:textColor="#000"
+                android:textStyle="bold"
+                android:padding="10dp"
+
+                android:textColor="@color/colorPrimaryDark2"
                 android:text="@string/faq7"/>
+        </LinearLayout>
             <TextView
                 android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
@@ -121,15 +215,34 @@
                 android:textColor="#444"
                 android:fontFamily="serif"
                 android:text="@string/faq8"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
 
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#f9f3f3"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="5dp"
+                android:paddingLeft="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary1"/>
             <TextView
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
                 android:fontFamily="serif"
-                android:textColor="#000"
-                android:text="@string/faq9"/>
+                android:padding="10dp"
+
+                android:textColor="@color/colorPrimaryDark2"
+                android:text="@string/faq9"/></LinearLayout>
             <TextView
                 android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
@@ -138,15 +251,34 @@
                 android:textColor="#444"
                 android:fontFamily="serif"
                 android:text="@string/faq10"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
 
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#f9f3f3"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="5dp"
+                android:paddingLeft="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary1"/>
             <TextView
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
+                android:textAllCaps="true"
                 android:fontFamily="serif"
-                android:textColor="#000"
-                android:text="@string/faq11"/>
+                android:padding="10dp"
+
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark2"
+                android:text="@string/faq11"/></LinearLayout>
             <TextView
                 android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
@@ -155,15 +287,33 @@
                 android:textColor="#444"
                 android:fontFamily="serif"
                 android:text="@string/faq12"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
 
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#f9f3f3"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="5dp"
+                android:paddingLeft="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary1"/>
             <TextView
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
+                android:textAllCaps="true"
                 android:fontFamily="serif"
-                android:textColor="#000"
-                android:text="@string/faq13"/>
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimaryDark2"
+                android:text="@string/faq13"/></LinearLayout>
             <TextView
                 android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
@@ -172,6 +322,7 @@
                 android:textColor="#444"
                 android:fontFamily="serif"
                 android:text="@string/faq14"/>
+        </LinearLayout>
         </LinearLayout>
 
     </ScrollView>

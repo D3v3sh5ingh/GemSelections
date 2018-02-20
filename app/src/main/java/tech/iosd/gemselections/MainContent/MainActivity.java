@@ -51,6 +51,7 @@ import java.util.List;
 import java.util.Random;
 
 import tech.iosd.gemselections.Adapters.ConnectAdapter;
+import tech.iosd.gemselections.Astro_RemediesFragment;
 import tech.iosd.gemselections.AuthRelated.LoginActivity;
 import tech.iosd.gemselections.DataProviders.ConnectOptions;
 import tech.iosd.gemselections.Handicrafts.Handicrafts;
@@ -98,7 +99,8 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(tech.iosd.gemselections.R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        header = navigationView.inflateHeaderView(tech.iosd.gemselections.R.layout.nav_header_main);
+        header = navigationView.inflateHeaderView(R.layout.nav_header_main);
+        header.setPadding(10,10,10,10);
         _displayName = (TextView) header.findViewById(tech.iosd.gemselections.R.id.DisplayName);
         _displayEmail = (TextView) header.findViewById(tech.iosd.gemselections.R.id.DisplayEmail);
         _login = (Button) header.findViewById(tech.iosd.gemselections.R.id.main_login);
@@ -521,6 +523,9 @@ public class MainActivity extends AppCompatActivity
 
             case R.id.nav_astro:
                 fragment = new MainAstrologyFragment();
+                break;
+            case R.id.nav_astro_remedies:
+                fragment = new Astro_RemediesFragment();
                 break;
             case R.id.gemstone_recommendation:
                 fragment=new MainGemstoneRecommendationFragment();

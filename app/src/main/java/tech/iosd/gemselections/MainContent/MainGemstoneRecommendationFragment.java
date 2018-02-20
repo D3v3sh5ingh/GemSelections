@@ -3,7 +3,17 @@ package tech.iosd.gemselections.MainContent;
 /**
  * Created by kushalgupta on 21/12/17.
  */
+import java.text.DecimalFormat;
+
+
+import android.app.DatePickerDialog;
+
+
+import android.app.Dialog;
+import android.app.DialogFragment;
 import android.content.Intent;
+import android.icu.text.SimpleDateFormat;
+
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,13 +23,20 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+;
 import android.widget.EditText;
+
 import android.widget.Toast;
+import android.widget.DatePicker;
+
 
 
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerSupportFragment;
+
+import java.util.Calendar;
+import java.util.Locale;
 
 import tech.iosd.gemselections.R;
 
@@ -32,6 +49,8 @@ public class MainGemstoneRecommendationFragment extends Fragment {
     private YouTubePlayer YPlayer;
     private static final String DEVELOPER_KEY = "AIzaSyBKlHdEkS-X7Vb2mW2qQSlF1TOxKzWpSU8";
     private static final int RECOVERY_REQUEST = 1;
+
+    private EditText dateOfBirth,  phoneNumber;
 
     @Nullable
     @Override
@@ -70,7 +89,20 @@ public class MainGemstoneRecommendationFragment extends Fragment {
         final EditText message=view.findViewById(R.id.et_message);
         final EditText placeOfBirth=view.findViewById(R.id.et_place_of_birth);
         final EditText timeOfBirth=view.findViewById(R.id.time_of_birth);
+        dateOfBirth = (EditText) view.findViewById(R.id.et_date_of_birth);
+        phoneNumber = (EditText) view.findViewById(R.id.et_phone_number);
         Button send=view.findViewById(R.id.sendMailBtn);
+
+        dateOfBirth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                DialogFragment newFragment = new SelectDateFragment();
+                newFragment.show(getActivity().getFragmentManager(), "DatePicker");
+                //Toast.makeText(getActivity().getApplicationContext(),"dp",Toast.LENGTH_SHORT).show();
+            }
+        });
+
 
         send.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,11 +112,13 @@ public class MainGemstoneRecommendationFragment extends Fragment {
                 String sendtimeOfBirth=timeOfBirth.getText().toString();
                 String sendMessageMail=message.getText().toString();
                 String sendplaceOfBirth=placeOfBirth.getText().toString();
+                String sendDateOfBirth= dateOfBirth.getText().toString();
+                String sendPhoneNumber = phoneNumber.getText().toString();
                 try {
                     Intent intent = new Intent(Intent.ACTION_SENDTO); // it's not ACTION_SEND
                  //   intent.setType("text/plain");
                     intent.putExtra(Intent.EXTRA_SUBJECT, " Gemstone Recommendation user name:" + " " + sendMailName);
-                    intent.putExtra(Intent.EXTRA_TEXT, "Place of Birth:" + sendplaceOfBirth + "\n"+"Time of birth:"+sendtimeOfBirth + "Questions:" + sendMessageMail);
+                    intent.putExtra(Intent.EXTRA_TEXT, "Place of Birth:" + sendplaceOfBirth + "\n"+"Time of birth:"+sendtimeOfBirth +"\n"+"Phone Number: "+sendPhoneNumber+"\n" +"Date of Birth: " +sendDateOfBirth + "Questions:" + sendMessageMail);
                     intent.setData(Uri.parse("mailto:aradikhanna@gmail.com"));
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(Intent.createChooser(intent, "Mail Via..."));
@@ -115,7 +149,7 @@ public class MainGemstoneRecommendationFragment extends Fragment {
     }
 
 
-    }
+}
 
 
 
